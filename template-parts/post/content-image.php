@@ -1,0 +1,1 @@
+<!-- /assets/template-parts/post/content-image -->
