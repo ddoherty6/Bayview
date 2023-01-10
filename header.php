@@ -43,6 +43,18 @@
 				</div>
 	
 				<div class="primary-navigation">
+                        <!-- Givebutter Elements -->
+                        <script>
+                            window.Givebutter=window.Givebutter||function(){(Givebutter.q=Givebutter.q||[]).push(arguments)};Givebutter.l=+new Date;
+                            window.Givebutter('setOptions',
+                            {
+                                "accountId": "DiMt5G8qR2CV0ITR"
+                            });
+                        </script>
+                        <script async src="https://js.givebutter.com/elements/latest.js" ></script>
+                        <!-- End Givebutter Elements -->
+                        <!-- Element Name: New Donate Button -->
+                        <div givebutter-element-id="pXvR2L"></div>
                         <?php
                             if ( has_nav_menu( 'primary' ) ) :
                                 wp_nav_menu( [
@@ -59,7 +71,7 @@
                                 printf(
                                     '<a href="%1$s">%2$s</a>',
                                     esc_url( admin_url( '/nav-menus.php' ) ),
-                                    esc_html__( 'Asign a menu', 'herobiz' )
+                                    esc_html__( 'Asign a menu', 'bayview' )
                                 );
                             endif;
                         ?>
