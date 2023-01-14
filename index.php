@@ -25,18 +25,19 @@ get_header();
             printf(
                 '<a href="%1$s">%2$s</a>',
                 esc_url( admin_url( '/nav-menus.php' ) ),
-                esc_html__( 'Asign a menu', 'herobiz' )
+                esc_html__( 'Asign a menu', 'bayview' )
             );
         endif;
         ?>	
     </div>
 
     <div class="col-8"> <!-- Shadow div to stack tag-line div on top of content div -->
-    <div id="tag-line" class="site-content">
-        <h2 id="blog-title" class="page-title entry-title" style="text-align:center">
-            Dignity. Honor. Respect.
-        </h2>
-    </div>
+        <div id="tag-line" class="site-content row-4">
+            <h2 id="blog-title" class="page-title entry-title" style="text-align:center">
+                Dignity. Honor. Respect.
+            </h2>
+        </div>
+        
         <ul id="content" class="site-content">
             <?php
             // Start the loop
@@ -55,13 +56,22 @@ get_header();
             endif;
             ?>
         </ul>
+        
     </div>
-    <div id="events" class="site-content">
-        <header class="page-header entry-header">
-            <h2 class="page-title entry-title" style="text-align:center">EVENTS</h2>
-        </header>
-        <?php get_sidebar(); ?>
-    </div>
+    <?php 
+        $events = tribe_get_events( [ 
+            'start_date' => 'now',
+            ] );
+        $numberOfEvents = count($events);
+        if($numberOfEvents > 0): ?>
+        <div id="events" class="site-content">
+            <header class="page-header entry-header">
+                <h2 class="page-title entry-title" style="text-align:center">EVENTS</h2>
+            </header>
+            <?php get_sidebar(); ?>
+        </div>
+    <?php else: endif; ?>
 </div>
 <?php
-get_footer();
+    get_footer();
+?>
