@@ -8,7 +8,7 @@ get_header();
 <div id="float-div">
     <div id="services" class="site-content">
         <header class="page-header entry-header">
-            <h2 class="page-title entry-title" style="text-align:center">SERVICES</h2>
+            <h2 class="entry-title">SERVICES</h2>
         </header>
         <?php
         if ( has_nav_menu( 'services' ) ) :
@@ -32,7 +32,7 @@ get_header();
     </div>
 
     <div class="col-8"> <!-- Shadow div to stack tag-line div on top of content div -->
-        <div id="tag-line" class="site-content row-4">
+        <div id="tag-line" class="site-content">
             <h2 id="blog-title" class="page-title entry-title" style="text-align:center">
                 Dignity. Honor. Respect.
             </h2>

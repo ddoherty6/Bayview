@@ -10,7 +10,7 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6 d-flex">
                         <div class="footer-info">
                             <h3>Bayview Senior Services</h3>
                             <p>
@@ -86,7 +86,7 @@
     <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
     <div id="preloader"></div>
-</div>
+
 <?php wp_footer(); ?>
 </body>
 </html>

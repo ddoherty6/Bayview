@@ -5,14 +5,16 @@
 
 ?>
 <!-- assets/template-parts/post/content -->
-<li id="post" class="type-post">
+<li id="post" class="type-post row">
     <!-- Post thumbnail -->
-    <?php if ( has_post_thumbnail() ) : ?>
-        <?php the_post_thumbnail( 'large' ); // full, large, medium, custom size
-    endif;
-    ?>
+    <div class="col-4">
+        <?php if ( has_post_thumbnail() ) : ?>
+            <?php the_post_thumbnail( 'large' ); // full, large, medium, custom size
+        endif;
+        ?>
+    </div>
     <!-- <div class="post-text wp-container-4 wp-container-3 wp-block-group"> -->
-        <div>
+        <div class="post-text col-8 col-md-12">
             <!-- Post Title -->
             <?php
             if ( is_singular() ) :

@@ -8,7 +8,7 @@
 <html <?php language_attributes(); ?>>
     <head>
         <meta charset="<?php bloginfo( 'charset' ) ?>">
-        <meta name="viewport" content="width=device-width, intial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Bayview Senior Services</title>
         <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri().'/js/jquery.js'; ?>"></script>
         <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri().'/js/jquery-ui.min.js'; ?>"></script>
@@ -18,8 +18,8 @@
         <?php wp_head(); ?>
     </head>
     <!-- <body <?php body_class(); ?>> -->
-    <body class="home page-template page-template-template-home page-template-template-home-php page page-id-49 custom-background wp-custom-logo wide-theme-layout vertical-header-layout site-title-hidden site-description-hidden comments-hidden">
-    <div id="page" class="site">
+    <body class="vertical-header-layout">
+    
         <!-- ======= Header ======= -->
         <header id="masthead" class="site-header" role="banner">
             <!-- <?php

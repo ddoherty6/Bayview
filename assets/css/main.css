@@ -695,7 +695,6 @@ textarea {
 	max-width: 1440px;
 	background-color: #fdedcb;
 	background: var(--page-background-color);
-	/*background-image: url("../../uploads/2015/08/6280430.jpg");*/
 }
 
 .site-header,
@@ -712,6 +711,7 @@ textarea {
 
 #float-div {
 	display: flex;
+	justify-content: center;
 }
 
 #post {
@@ -719,21 +719,18 @@ textarea {
 }
 
 .post-text {
-	width: auto;
-	padding-left: 3%;
-	font-size: .9em;
+	/* width: auto; */
+	/* padding-left: 3%;
+	font-size: .9em; */
 }
 
+.post-text h1,
 .post-text h2 {
-	font-size: 1.6em;
-}
-
-.post-text h2 {
-	margin: 0;
+	color: var(--link-color);
 }
 
 .post-text p {
-	margin: 0;
+	/* margin: 0; */
 }
 
 .post-text time {
@@ -745,8 +742,8 @@ textarea {
 	padding: 1% 1% 1% 1%;
 	border-radius: 25px;
 	background-color: #fdedcb;
-	text-align: center;
-	box-sizing: content-box;
+	/* text-align: center; */
+	justify-content: center;
 }
 
 .tribe-common-g-row {
@@ -798,9 +795,9 @@ textarea {
 }
 
 #services {
+	border-radius: 25px;
 	padding: 1rem 1rem 1rem 1rem;
 	margin-right: 1%;
-	width: max-content;
 	text-align: center;
 }
 
@@ -815,7 +812,6 @@ textarea {
 #events {
 	padding: 1rem 1rem 1rem 1rem;
 	margin-left: 1%;
-	width: max-content;
 }
 
 #events header {
@@ -1008,11 +1004,11 @@ body.site-description-hidden .site-header .site-description {
 
 /* Hide the menu on small screens when JavaScript is available. */
 .main-navigation ul,
-.main-navigation .menu-item-has-children > a > .icon,
+/* .main-navigation .menu-item-has-children > a > .icon,
 .main-navigation .page_item_has_children > a > .icon,
 .main-navigation ul a > .icon {
 	display: none;
-}
+} */
 
 .main-navigation.toggled-on > ul.menu {
 	display: block;
@@ -1208,7 +1204,8 @@ body.site-description-hidden .site-header .site-description {
 .type-page,
 .type-attachment {
 	margin: 0 0 0 0;
-	padding: 0 1rem 0 1rem;
+	padding: 0 1rem 1rem 1rem;
+	display: flex;
 }
 
 .sticky {
@@ -3728,496 +3725,45 @@ figcaption,
 	}
 }
 
-/*--------------------------------------------------------------
-## - Media Queries for Layout
---------------------------------------------------------------*/
-@media only screen and (min-width: 480px) {
-	.site-header,
-	.site-container {
-		padding-left: 2rem;
-		padding-right: 2rem;
+/* Custom viewport settings */
+
+@media only screen and (max-width: 960px) {
+	.primary-navigation {
+		margin-top: 1.5rem;
 	}
 
-	.header-main {
-		padding-top: 1.5rem;
-		padding-bottom: 1.5rem;
-	}
-
-	.page-footer {
-		margin-left: -2rem;
-		margin-right: -2rem;
-		padding: 2rem;
-	}
-
-	.site-footer {
-		padding: 2rem;
-	}
-
-	.type-post,
-	.type-page,
-	.type-attachment {
-		margin-bottom: 2rem;
-	}
-
-	.entry-header,
-	.post-image {
-		margin-bottom: 1.25rem;
-	}
-
-	.post-navigation .nav-links {
-		display: flex;
-	}
-
-	.post-navigation .nav-links .nav-previous,
-	.post-navigation .nav-links .nav-next {
-		margin: 0;
-		width: 50%;
-	}
-
-	.post-navigation .nav-links .nav-previous {
-		padding-right: 1rem;
-	}
-
-	.post-navigation .nav-links .nav-next {
-		padding-left: 1rem;
-	}
-}
-
-@media only screen and (min-width: 640px) {
-	.site-header,
-	.site-container {
-		padding-left: 3rem;
-		padding-right: 3rem;
-	}
-
-	.header-main {
-		padding-top: 2rem;
-		padding-bottom: 2rem;
-	}
-
-	.page-footer {
-		margin-left: -3rem;
-		margin-right: -3rem;
-		padding: 3rem;
-	}
-
-	.site-footer {
-		padding: 3rem;
-	}
-
-	.type-post,
-	.type-page,
-	.type-attachment {
-		margin-bottom: 3rem;
-	}
-
-	.entry-header,
-	.post-image {
-		margin-bottom: 1.5rem;
-	}
-
-	.comment {
-		padding: 2rem;
-		margin-bottom: 2rem;
-	}
-}
-
-@media only screen and (min-width: 960px) {
-	.site-header,
-	.site-container {
-		padding-left: 4rem;
-		padding-right: 4rem;
-	}
-
-	.header-main {
-		padding-top: 2.5rem;
-		padding-bottom: 2.5rem;
-	}
-
-	.page-footer {
-		margin-left: -4rem;
-		margin-right: -4rem;
-		padding: 4rem;
-	}
-
-	.site-footer {
-		padding: 4rem;
-	}
-
-	.type-post,
-	.type-page,
-	.type-attachment {
-		margin-bottom: 4rem;
-	}
-
-	.entry-header,
-	.post-image {
-		margin-bottom: 1.75rem;
-	}
-
-	.comment {
-		padding: 2.5rem;
-		margin-bottom: 2.5rem;
-	}
-}
-
-@media only screen and (min-width: 1120px) {
-	.entry-content > .alignwide {
-		margin-left: -120px;
-		margin-right: -120px;
-		max-width: 1120px;
-	}
-}
-
-@media only screen and (min-width: 1280px) {
-	.site-header,
-	.site-container {
-		padding-left: 5rem;
-		padding-right: 5rem;
-	}
-
-	.header-main {
-		padding-top: 3rem;
-		padding-bottom: 3rem;
-	}
-
-	.page-footer {
-		margin-left: -5rem;
-		margin-right: -5rem;
-		padding: 5rem;
-	}
-
-	.site-footer {
-		padding: 5rem;
-	}
-
-	.type-post,
-	.type-page,
-	.type-attachment {
-		margin-bottom: 5rem;
-	}
-
-	.entry-header,
-	.post-image {
-		margin-bottom: 2rem;
-	}
-
-	.comment {
-		padding: 3rem;
-		margin-bottom: 3rem;
-	}
-}
-
-@media only screen and (min-width: 1440px) {
-	.entry-content > .alignfull {
-		margin-left: -280px;
-		margin-right: -280px;
-		max-width: 1440px;
-	}
-}
-
-/*--------------------------------------------------------------
-## - Media Queries for Navigation
---------------------------------------------------------------*/
-@media only screen and (min-width: 400px) {
-	.primary-menu-toggle .menu-toggle-text {
-		display: inline-block;
-		margin-left: 0.5rem;
-	}
-}
-
-@media only screen and (min-width: 960px) {
-	.primary-menu-toggle,
-	.main-navigation .dropdown-toggle {
-		display: none;
-	}
-
-	.main-navigation ul,
-	.main-navigation ul ul {
+	#float-div {
 		display: block;
 	}
 
-	.primary-navigation {
-		display: flex;
-		margin-left: auto;
-		width: auto;
-		align-items: center;
+	.site-content {
+		margin-bottom: 1.5rem;
 	}
 
-	#masthead .main-navigation > ul.menu {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-ms-flex-flow: row wrap;
-		flex-flow: row wrap;
+	#services {
 		margin: 0;
-		border-bottom: none;
 	}
 
-	.main-navigation > ul > li {
-		padding: 0.8rem 1rem;
-	}
-
-	.main-navigation > ul > li > a {
-		padding: 0.2rem 0;
-		border: none;
-		border-bottom: 3px solid transparent;
-	}
-
-	.main-navigation > ul > li.current-menu-item > a {
-		text-decoration: none;
-		border-color: rgba(0, 0, 0, 0.9);
-		border-color: var(--header-text-color);
-	}
-
-	/* Dropdown Menus */
-	.main-navigation ul ul {
-		position: absolute;
-		left: -999em;
-		top: 100%;
-		z-index: 99999;
-		padding: 0.5rem;
-		border: 1px solid;
-		border-color: rgba(0, 0, 0, 0.1);
-		border-color: var(--header-border-color);
-	}
-
-	.main-navigation ul li:hover > ul,
-	.main-navigation ul li.focus > ul {
-		right: 0;
-		left: auto;
-	}
-
-	.main-navigation ul ul li a {
-		width: 16rem;
-	}
-
-	.main-navigation ul ul ul {
-		left: -999em;
-		margin-top: -1px;
-		top: 0;
-	}
-
-	.main-navigation ul ul li:hover > ul,
-	.main-navigation ul ul li.focus > ul {
-		right: 100%;
-		left: auto;
-	}
-
-	.main-navigation ul ul li a,
-	.main-navigation ul ul ul li a,
-	.main-navigation ul ul ul ul li a {
-		padding: 1rem;
-		border: none;
-	}
-
-	/* Dropdown Icons */
-	.main-navigation .menu-item-has-children > a > .icon,
-	.main-navigation .page_item_has_children > a > .icon {
-		position: relative;
-		display: inline-block;
-		left: 0.5rem;
-		top: 0.1rem;
-		width: 14px;
-		height: 14px;
-		fill: rgba(0, 0, 0, 0.9);
-		fill: var(--header-text-color);
-		transition: fill 0.15s ease;
-	}
-
-	.main-navigation ul ul .menu-item-has-children > a > .icon,
-	.main-navigation ul ul .page_item_has_children > a > .icon {
-		position: absolute;
-		left: auto;
-		right: 1em;
-		top: 50%;
-		margin-top: -0.5rem;
-		-webkit-transform: rotate(-90deg);
-		-ms-transform: rotate(-90deg);
-		transform: rotate(-90deg);
-	}
-
-	.main-navigation ul .menu-item-has-children > a:hover > .icon,
-	.main-navigation ul .page_item_has_children > a:hover > .icon {
-		fill: #e36355;
-		fill: var(--header-text-hover-color);
-	}
-}
-
-/*--------------------------------------------------------------
-## - Media Queries for Blocks
---------------------------------------------------------------*/
-@media only screen and (min-width: 640px) {
-	.wp-block-group.has-background {
-		padding: 1.5rem;
-	}
-}
-
-/* Columns Block */
-@media only screen and (min-width: 782px) {
-	.wp-block-column:not(:first-child) {
-		margin-left: 1.5rem;
-	}
-}
-
-@media only screen and (min-width: 960px) {
-	.wp-block-group.has-background {
-		padding: 1.75rem;
-	}
-
-	.wp-block-column:not(:first-child) {
-		margin-left: 1.75rem;
-	}
-}
-
-@media only screen and (min-width: 1280px) {
-	.wp-block-group.has-background {
-		padding: 2rem;
-	}
-
-	.wp-block-column:not(:first-child) {
-		margin-left: 2rem;
-	}
-}
-
-/*--------------------------------------------------------------
-## - Media Queries for Media
---------------------------------------------------------------*/
-@media only screen and (min-width: 320px) {
-	.alignleft {
-		float: left;
-		margin-right: 1.5rem;
-	}
-
-	.alignright {
-		float: right;
-		margin-left: 1.5rem;
-	}
-}
-
-@media only screen and (min-width: 480px) {
-	.gallery-columns-3,
-	.gallery-columns-5,
-	.gallery-columns-6,
-	.gallery-columns-7,
-	.gallery-columns-9 {
-		grid-template-columns: repeat(3, 1fr);
-	}
-
-	.gallery-columns-4,
-	.gallery-columns-8 {
-		grid-template-columns: repeat(4, 1fr);
-	}
-}
-
-@media only screen and (min-width: 720px) {
-	.gallery-columns-5 {
-		grid-template-columns: repeat(5, 1fr);
-	}
-
-	.gallery-columns-6 {
-		grid-template-columns: repeat(6, 1fr);
-	}
-
-	.gallery-columns-7 {
-		grid-template-columns: repeat(7, 1fr);
-	}
-}
-
-@media only screen and (min-width: 800px) {
-	.gallery-columns-8 {
-		grid-template-columns: repeat(8, 1fr);
-	}
-
-	.gallery-columns-9 {
-		grid-template-columns: repeat(9, 1fr);
-	}
-}
-
-/*--------------------------------------------------------------
-# - Theme Options
---------------------------------------------------------------*/
-
-/* Hide Elements in Customizer for instant live preview */
-.credit-link-hidden .site-info .credit-link,
-.single-post-header-image-hidden .site #headimg {
-	display: none;
-}
-
-/* Wide Theme layout */
-body.wide-theme-layout .site {
-	max-width: 100%;
-}
-
-/* Centered Theme layout */
-@media only screen and (min-width: 960px) {
-	body.centered-theme-layout {
-		padding-left: 1rem;
-		padding-right: 1rem;
-	}
-}
-
-@media only screen and (min-width: 1120px) {
-	body.centered-theme-layout {
-		padding-left: 1.5rem;
-		padding-right: 1.5rem;
-	}
-}
-
-@media only screen and (min-width: 1280px) {
-	body.centered-theme-layout {
-		padding-left: 2rem;
-		padding-right: 2rem;
-	}
-}
-
-/* Centered Header layout */
-@media only screen and (min-width: 960px) {
-	body.vertical-header-layout .site-header {
-		padding: 0;
-	}
-
-	body.vertical-header-layout .header-main {
-		flex-direction: column;
-		align-items: center;
-		padding-top: 2.5rem;
-		padding-bottom: 0;
-	}
-
-	body.vertical-header-layout .header-main .site-logo {
-		margin: 0 0 1rem;
-	}
-
-	body.vertical-header-layout .header-main .site-branding {
-		margin: 0 0 2.5rem;
-		align-items: center;
-	}
-
-	body.vertical-header-layout .header-main .primary-navigation {
-		display: flex;
+	#events {
 		margin: 0;
-		padding: 0.5rem 0;
+	}
+
+	#tag-line {
+		display: none;
+	}
+
+	.col-8 {
+		width: 100%;	
+	}
+
+	.col-4 {
 		width: 100%;
-		justify-content: center;
-		border-top: 1px solid rgba(0, 0, 0, 0.1);
-		border-top: 1px solid var(--header-border-color);
 	}
 
-	body.vertical-header-layout .header-main .main-navigation > ul > li {
-		padding: 0;
+	.site-main article img {
+		padding: 3%;
 	}
 
-	body.vertical-header-layout .header-main .main-navigation > ul > li > a {
-		padding: 1rem;
-		border: none;
-	}
-
-	body.vertical-header-layout .header-main .main-navigation > ul > li.current-menu-item > a {
-		text-decoration: underline;
-	}
-
-	body.vertical-header-layout .header-main .main-navigation ul ul {
-		border-top: 3px solid rgba(255, 255, 255, 0.95);
-		border-top: 3px solid var(--header-text-color);
-	}
 }
+
+
