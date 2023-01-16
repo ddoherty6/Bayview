@@ -14,7 +14,7 @@
         ?>
     </div>
     <!-- <div class="post-text wp-container-4 wp-container-3 wp-block-group"> -->
-        <div class="post-text col-8 col-md-12">
+        <div class="post-text col-8">
             <!-- Post Title -->
             <?php
             if ( is_singular() ) :
