@@ -31,7 +31,7 @@ get_header();
         ?>	
     </div>
 
-    <div class="col-8"> <!-- Shadow div to stack tag-line div on top of content div -->
+    <div id="post-excerpts"> <!-- Shadow div to stack tag-line div on top of content div -->
         <div id="tag-line" class="site-content">
             <h2 id="blog-title" class="page-title entry-title" style="text-align:center">
                 Dignity. Honor. Respect.

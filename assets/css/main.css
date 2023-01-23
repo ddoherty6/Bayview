@@ -714,6 +714,10 @@ textarea {
 	justify-content: center;
 }
 
+#post-excerpts {
+	flex-basis: 66%;
+}
+
 #post {
 	display: flex;
 }
@@ -803,6 +807,7 @@ textarea {
 	padding: 1rem 1rem 1rem 1rem;
 	margin-right: 1%;
 	text-align: center;
+	flex-direction: 33%;
 }
 
 #services header {
