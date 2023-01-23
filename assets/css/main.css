@@ -718,6 +718,10 @@ textarea {
 	display: flex;
 }
 
+/* #thumb {
+	width: 100%;
+} */
+
 .post-text {
 	/* width: auto; */
 	/* padding-left: 3%;
@@ -789,10 +793,10 @@ textarea {
 	margin-right: 1%;
 }
 
-#content img {
+/* #content img {
 	width: 300px;
 	height: 200px;
-}
+} */
 
 #services {
 	border-radius: 25px;
@@ -3946,6 +3950,10 @@ body.wide-theme-layout .site {
 	.primary-navigation {
 		margin-top: 1.5rem;
 	}
+
+	/* #primary-menu {
+		display: flex;
+	} */
 
 	#float-div {
 		display: block;

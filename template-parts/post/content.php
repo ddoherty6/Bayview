@@ -8,10 +8,12 @@
 <li id="post" class="type-post row">
     <!-- Post thumbnail -->
     <div class="col-4">
-        <?php if ( has_post_thumbnail() ) : ?>
-            <?php the_post_thumbnail( 'large' ); // full, large, medium, custom size
-        endif;
-        ?>
+        <div id="thumb" class="ratio ratio-1x1">
+            <?php if ( has_post_thumbnail() ) : ?>
+                <?php the_post_thumbnail() ; // full, large, medium, custom size
+            endif;
+            ?>
+        </div>
     </div>
     <!-- <div class="post-text wp-container-4 wp-container-3 wp-block-group"> -->
         <div class="post-text col-8">

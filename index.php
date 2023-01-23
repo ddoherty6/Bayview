@@ -37,7 +37,6 @@ get_header();
                 Dignity. Honor. Respect.
             </h2>
         </div>
-        
         <ul id="content" class="site-content">
             <?php
             // Start the loop
@@ -56,40 +55,13 @@ get_header();
             endif;
             ?>
         </ul>
-        
     </div>
-    <?php
-        $dom = new DomDocument(); // counting future events to see if we need to display events column
-        $numberOfEvents = 0;
-        $events = tribe_get_events( [ 
-            'start_date' => 'now',
-            ] );
-        
-        foreach ( $events as $post ) {
-
-            setup_postdata( $post );
-            
-            // get $post category
-            $catHtmlString = tribe_get_event_categories($post->ID); // output is string with extraneous html
-            @ $dom->loadHTML($catHtmlString); // convert string to html obj for parsing (overwrite $dom instance each time)
-            $textContent = $dom->firstElementChild->firstElementChild->textContent; // dig down to <a> element and pull text
-            $textContentArray = explode("Event Category: ", $textContent); // split event name from rest of string returned by "tribe_get_event_categories"
-            $cat = $textContentArray[1]; // whatever isnt "Event Category :" is the event category. nice one eventscalendar.
-        
-            if ($cat == "Events"){
-                $numberOfEvents = $numberOfEvents + 1;
-            }
-
-        }
-
-        if($numberOfEvents > 0): ?>
-        <div id="events" class="site-content">
-            <header class="page-header entry-header">
-                <h2 class="page-title entry-title" style="text-align:center">EVENTS</h2>
-            </header>
-            <?php get_sidebar(); ?>
-        </div>
-    <?php else: endif; ?>
+    <!-- <div id="events" class="site-content">
+        <header class="page-header entry-header">
+            <h2 class="page-title entry-title" style="text-align:center">EVENTS</h2>
+        </header>
+        <?php //get_sidebar(); ?>
+    </div> -->
 </div>
 <?php
     get_footer();
