@@ -39,6 +39,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # - CSS Variables
 --------------------------------------------------------------*/
 
+@font-face {
+    font-family: Oswald-Variable;
+    src: url(Oswald-VariableFont_wght.ttf);
+}
+
 :root {
 	--primary-color: #c9493b;
 	--secondary-color: #e36355;
@@ -54,7 +59,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--page-background-color: linear-gradient(to bottom, #c2602b, #fcebd3); /* ----------------- */
 	--page-border-color: rgba(0, 0, 0, 0.1);
 	--page-light-bg-color: rgba(0, 0, 0, 0.05);
-	--link-color:#57260c;
+	--link-color:#2b1c15;
 	--link-hover-color: #cf922a;
 	--button-color: #c9493b;
 	--button-text-color: #fff;
@@ -64,16 +69,16 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--header-text-color: #fdedcb;
 	--header-text-hover-color: #cf922a;
 	--header-border-color: rgba(0, 0, 0, 0.1);
-	--title-color: #202020;
+	--title-color: #2b1c15;
 	--title-hover-color: #e36355;
 	--footer-background-color: linear-gradient(to bottom, #bda793, #fcebd3); /* not used */
 	--footer-text-color: #57260c;
 	--footer-link-color: #57260c;
 	--footer-link-hover-color: cf922a;
 	--footer-border-color: rgba(255, 255, 255, 0.1);
-	--text-font: apparat-light, sans-serif;
-	--title-font: apparat-light, sans-serif;
-	--navi-font: apparat-light, sans-serif;
+	--text-font: Oswald-Variable;
+	--title-font: Oswald-Variable;
+	--navi-font: Oswald-Variable;
 	--title-font-weight: normal;
 	--navi-font-weight: light;
 	--title-text-transform: none;
@@ -303,6 +308,10 @@ h2 {
 	font-size: 1.75rem;
 }
 
+h2 a {
+	font-size: 38px;
+}
+
 h3 {
 	font-size: 24px;
 	font-size: 1.5rem;
@@ -323,10 +332,13 @@ h6 {
 	font-size: 1.1875rem;
 }
 
-/* p {
-	margin: 1.5em 0;
-	padding-left: 1rem;
-} */
+p {
+	font-size: 25px;
+}
+
+li a {
+	font-size: 25px;
+}
 
 dfn,
 cite,
@@ -436,13 +448,13 @@ hr {
 
 ul,
 ol {
-	margin: 1.5em 0;
+	/* margin: 1.5em 0; */
 	padding-inline-start: 0px;
 	/* padding: 0 0 0 1.25em; */
 }
 
 ul {
-	list-style: none;
+	/* list-style: none; */
 }
 
 ol {
@@ -714,10 +726,6 @@ textarea {
 	justify-content: center;
 }
 
-#post-excerpts {
-	flex-basis: 66%;
-}
-
 #post {
 	display: flex;
 }
@@ -746,12 +754,23 @@ textarea {
 }
 
 .site-content {
-	margin: 1.5rem 1.5rem 0 1.5rem;
-	padding: 1% 1% 1% 1%;
+	/* margin: 1.5rem 1.5rem 0 1.5rem;
+	margin-bottom: 1.5rem; */
+	/* padding: 1% 1% 1% 1%; */
 	border-radius: 25px;
-	background-color: #fdedcb;
+	background-color: #e7dfd4;
+	/* background-color: #fdedcb; */
 	/* text-align: center; */
-	justify-content: center;
+	/* justify-content: center; */
+	padding: 3% 1% 3% 1%;
+	margin: 1% 1% 1% 1%;
+}
+
+.outside-site-content {
+	margin: 1.5rem 1.5rem 0 1.5rem;
+	margin-bottom: 1.5rem;
+	padding: 1% 1% 1% 1%;
+	background-color: #fdedcb;
 }
 
 .tribe-common-g-row {
@@ -781,8 +800,8 @@ textarea {
 }
 
 .excerpt {
-	margin: 1.5rem 0;
-	padding-left: 1rem;
+	/* margin: 1.5rem 0; */
+	padding-left: 0;
 }
 
 #tag-line {
@@ -792,35 +811,45 @@ textarea {
 }
 
 #content {
-	padding: 1rem 0 1% 0;
-	margin-left: 1%;
-	margin-right: 1%;
+	/* padding: 1rem 0 1% 0; */
+	/* margin-left: 1%;
+	margin-right: 1%; */
+	flex-basis: 75%;
 }
 
-/* #content img {
-	width: 300px;
-	height: 200px;
-} */
-
 #services {
-	border-radius: 25px;
+	/* border-radius: 25px; */
 	padding: 1rem 1rem 1rem 1rem;
 	margin-right: 1%;
-	text-align: center;
-	flex-basis: auto;
+	/* text-align: center; */
+	flex-basis: 25%;
+	display: flex;
+  	flex-direction: column;
 }
 
 #services-menu li {
 	margin: 1% 0 1% 0;
+	/* padding-left: 5%; */
+	list-style-position: inside;
 }
 
-#services header {
+#services-header {
 	margin: 0;
+	font-size: 38px;
+	text-align: center;
 }
 
-#services header h2 {
-	font-size: 1.5em;
+#services-color {
+	flex-grow: 1;
 }
+
+#front-post-title {
+	font-size: 38px;
+}
+
+/* #services header h2 {
+	font-size: 1.5em;
+} */
 
 #events {
 	padding: 1rem 1rem 1rem 1rem;
@@ -845,7 +874,9 @@ textarea {
 }
 
 #blog-title {
-	color: #dabb73;
+	color: #fdedcb;opacity:0.15;
+	font-size: 10vw;
+	font-variation-settings: "wght" 2000, "GRAD" 5000;
 }
 
 #header-images {
@@ -3960,20 +3991,23 @@ body.wide-theme-layout .site {
 		margin-top: 1.5rem;
 	}
 
-	/* #primary-menu {
-		display: flex;
-	} */
-
 	#float-div {
 		display: block;
 	}
 
-	.site-content {
-		margin-bottom: 1.5rem;
-	}
+	/* #primary-menu {
+		display: flex;
+	} */
 
 	#services {
 		margin: 0;
+		margin-left: 1%;
+		margin-right: 1%;
+	}
+
+	#content {
+		margin: 0;
+		margin-top: 5%;
 		margin-left: 1%;
 		margin-right: 1%;
 	}

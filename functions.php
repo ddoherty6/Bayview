@@ -1,6 +1,6 @@
 <?php
 /**
- * Herobiz functions and definations.
+ * Bayviews functions and definitions.
  */
 
 if ( ! function_exists( 'bayview_setup' ) ) {

@@ -4,15 +4,15 @@
  */
 
 ?>
-<!-- assets/template-parts/post/content -->
-<li id="post" class="type-post row">
+<!-- assets/template-parts/post/content --> 
+<li id="post" class="row site-content">
     <!-- Post thumbnail -->
     <div class="col-4">
-        <div id="thumb" class="ratio ratio-1x1">
-            <?php if ( has_post_thumbnail() ) : ?>
-                <?php the_post_thumbnail() ; // full, large, medium, custom size
-            endif;
-            ?>
+        <div>
+            <a id="thumb" class="ratio ratio-1x1" href= "<?php echo get_permalink(); ?>">
+                <?php if ( has_post_thumbnail() ) : ?>
+                <?php the_post_thumbnail() ; endif;?>
+            </a>
         </div>
     </div>
     <!-- <div class="post-text wp-container-4 wp-container-3 wp-block-group"> -->
@@ -22,7 +22,7 @@
             if ( is_singular() ) :
                 the_title( '<h1 class="entry-title">', '</h1>' );
             else :
-                the_title( '<h2 class="wp-block-post-title"><a href="'.esc_url( get_permalink() ).'" target="_self" rel="">', '</a></h2>' );
+                the_title( '<h2 class="wp-block-post-title"><a id="front-post-title" href="'.esc_url( get_permalink() ).'" target="_self" rel="">', '</a></h2>' );
             endif;
             ?>
             <div>               

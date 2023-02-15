@@ -5,40 +5,41 @@
 get_header();
 ?>
 <!-- /index -->
+<div id="tag-line">
+    <h2 id="blog-title" class="page-title entry-title" style="text-align:center">
+        Dignity Honor Respect
+    </h2>
+</div>
 <div id="float-div">
-    <div id="services" class="site-content">
-        <header class="page-header entry-header">
-            <h2 class="entry-title">SERVICES</h2>
-        </header>
-        <?php
-            if ( has_nav_menu( 'services' ) ) :
-                wp_nav_menu( [
-                    'theme_location' => 'services',
-                    'container'      => 'div',
-                    'container_class' => 'widget',
-                    'container_aria_label' => 'Services Menu',
-                    'menu_class'     => 'menu',
-                    'menu_id'        => 'services-menu',
-                    'depth'          => 3
-                    ] );
-                    else :
-                        printf(
-                            '<a href="%1$s">%2$s</a>',
-                            esc_url( admin_url( '/nav-menus.php' ) ),
-                            esc_html__( 'Asign a menu', 'bayview' )
-                        );
-                    endif;
-                    ?>	
+    <div id="services" class="outside-site-content">
+        <div id="services-color" class="site-content">
+            <header class="page-header entry-header">
+                <h2 id="services-header">SERVICES</h2>
+            </header>
+            <?php
+                if ( has_nav_menu( 'services' ) ) :
+                    wp_nav_menu( [
+                        'theme_location' => 'services',
+                        'container'      => 'div',
+                        'container_class' => 'widget',
+                        'container_aria_label' => 'Services Menu',
+                        'menu_class'     => 'menu',
+                        'menu_id'        => 'services-menu',
+                        'depth'          => 3
+                        ] );
+                else :
+                    printf(
+                        '<a href="%1$s">%2$s</a>',
+                        esc_url( admin_url( '/nav-menus.php' ) ),
+                        esc_html__( 'Asign a menu', 'bayview' )
+                    );
+                endif;
+            ?>	
+        </div>
     </div>
 
-    <div id="post-excerpts"> <!-- Shadow div to stack tag-line div on top of content div -->
-
-        <div id="tag-line" class="site-content">
-            <h2 id="blog-title" class="page-title entry-title" style="text-align:center">
-                Dignity. Honor. Respect.
-            </h2>
-        </div>
-        <ul id="content" class="site-content">
+    <div id="content" class="outside-site-content"> <!-- Shadow div to stack tag-line div on top of content div -->
+        <ul>
             <?php
             // Start the loop
                 if ( have_posts() ) :
