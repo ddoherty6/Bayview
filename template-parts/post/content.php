@@ -8,12 +8,12 @@
 <li id="post" class="row site-content">
     <!-- Post thumbnail -->
     <div class="col-4">
-        <div>
-            <a id="thumb" class="ratio ratio-1x1" href= "<?php echo get_permalink(); ?>">
+        <a href= "<?php echo get_permalink(); ?>">
+            <div id="thumb" class="ratio ratio-1x1">
                 <?php if ( has_post_thumbnail() ) : ?>
                 <?php the_post_thumbnail() ; endif;?>
-            </a>
-        </div>
+            </div>
+        </a>
     </div>
     <!-- <div class="post-text wp-container-4 wp-container-3 wp-block-group"> -->
         <div class="post-text col-8">

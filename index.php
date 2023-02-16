@@ -48,12 +48,12 @@ get_header();
                         get_template_part( 'template-parts/post/content', get_post_format() );
                     endwhile;
                     
-                    echo paginate_links( [
-                        'prev_text' => esc_html__( 'Prev', 'Bayview' ),
-                        'next_text' => esc_html__( 'Next', 'Bayview' ),
-                        ] );
-                        else :
-                            get_template_part( 'template-parts/page/content', 'none' );
+                    // echo paginate_links( [
+                    //     'prev_text' => esc_html__( 'Prev', 'Bayview' ),
+                    //     'next_text' => esc_html__( 'Next', 'Bayview' ),
+                    //     ] );
+                    //     else :
+                    //         get_template_part( 'template-parts/page/content', 'none' );
                 endif;
             ?>
         </ul>

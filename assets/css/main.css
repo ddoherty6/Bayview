@@ -482,9 +482,12 @@ dd {
 }
 
 img {
-	border: 0;
-	max-width: 100%; /* Adhere to container width. */
-	height: auto; /* Make sure images are scaled correctly. */
+	/* width: 100%;
+	height: 100%; */
+	/* object-fit: contain; */
+	/* border: 0; */
+	/* max-width: 100%; Adhere to container width. */
+	/* height: auto; Make sure images are scaled correctly. */
 }
 
 table {
