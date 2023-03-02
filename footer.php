@@ -22,6 +22,63 @@
                         </div>
                     </div>
 
+                    <div class="col-lg-9 col-md-6 d-flex flex-wrap">
+                        <div class="col-12">
+                            <div>
+                                <h1 class="text-center">Thank you to our Black Cuisine 2023 sponsors!</h1>
+                            </div>
+                        </div>
+                    
+                    
+                        <div class="col-12">
+                            <div class="footer-info">
+                                <img alt="advertisement" src="http://bhpmss.org/wp-content/uploads/2023/02/Sponser-Logo-Comp.png" />
+                            </div>
+                        </div>
+
+                        <!-- <div class="col-6">
+                            <div class="footer-info">
+                                <img alt="BGI and Nibbbi advertisement" src="http://bhpmss.org/wp-content/uploads/2023/02/BGIxNibbi_For-Print.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="footer-info">
+                                <img alt="Jonathan Rose advertisement" src="http://bhpmss.org/wp-content/uploads/2023/02/Jonathan-Rose.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="footer-info">
+                                <img alt="Livable City advertisement" src="http://bhpmss.org/wp-content/uploads/2023/02/Livable-City.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="footer-info">
+                                <img alt="Lucky Bayview advertisement" src="http://bhpmss.org/wp-content/uploads/2023/02/lucky-bayview-logo.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="footer-info">
+                                <img alt="San Francisco office of workforce development advertisement" src="http://bhpmss.org/wp-content/uploads/2023/02/OEWD-Logo-2.1-Black-Letters-for-Light-BG.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="footer-info">
+                                <img alt="Parsons advertisement" src="http://bhpmss.org/wp-content/uploads/2023/02/parsons-logo.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="footer-info">
+                                <img alt="web core advertisement" src="https://bhpmss.org/wp-content/uploads/2023/02/Webcor.png" />
+                            </div>
+                        </div> -->
+                    </div>
+
                     <!-- <div class="col-lg-2 col-md-6 footer-links">
                         <h4>Useful Links</h4>
                         <ul>
@@ -68,11 +125,11 @@
                     </div>
                     
                     <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
-                        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
-                        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                        <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a> -->
+                        <a href="https://www.facebook.com/bhpmss.org/" class="facebook"><i class="bi bi-facebook"></i></a>
+                        <!-- <a href="#" class="instagram"><i class="bi bi-instagram"></i></a> -->
+                        <!-- <a href="#" class="google-plus"><i class="bi bi-skype"></i></a> -->
+                        <a href="https://www.linkedin.com/company/bayview-senior-services/" class="linkedin"><i class="bi bi-linkedin"></i></a>
                     </div>
                     
                 </div>

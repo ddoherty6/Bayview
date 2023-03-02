@@ -519,7 +519,7 @@ tfoot td {
 
 a {
 	color: var(--link-color);
-	text-decoration: none;
+	text-decoration: underline;
 	background-color: transparent;
 }
 
@@ -2874,6 +2874,11 @@ figcaption,
 /*--------------------------------------------------------------
 # - Footer
 --------------------------------------------------------------*/
+
+#footer {
+
+}
+
 .site-footer {
 	font-size: 15px;
 	font-size: 0.9375rem;
